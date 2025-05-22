@@ -3,7 +3,7 @@
 #define the variables
 
 length = 10 #  value representing the length of the rectangle.
-width =5  #value representing the width of the rectangle.
+width = 5  #value representing the width of the rectangle.
 
 #calculate the area of the rectangle
 
