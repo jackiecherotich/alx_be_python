@@ -7,24 +7,22 @@ num2=float(input("Enter the second number: "))
 operation =input("Choose the operation (+, -, *, /):")
 #Operation commands
 
-if operation =='+':
- result = num1 + num2
+match operation:
+    case "+":
+        result = num1 + num2
+        print("The result is ",result,)
+    case "-":
+        result = num1 - num2
+        print("The result is ",result,)
+    case "*":
+        result = num1 * num2
+        print("The result is ",result,)
+    case "/":
+        if num2 != 0:
+            result = num1 / num2
+            print("The result is ",result,)
+        else:
+            print("Error: Cannot divide by zero.")
+    case _:
+        print("Invalid operation. Please choose one of +, -, *, /.")
 
-elif operation =='-':
- result =num1 - num2
-
-elif operation =='*':
- result =num1 * num2
-
-
-
-elif operation == '/':
-    if num2 == 0:
-        result = "Error: Cannot divide by zero"
-    else:
-        result = num1 / num2
-else:
-    result = "Invalid operation selected"
-
-
-print("The result is " ,result,)
