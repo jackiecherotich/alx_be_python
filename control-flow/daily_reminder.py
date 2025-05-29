@@ -1,17 +1,17 @@
-task_variable = input("Enter your task: ")
-priority_variable = input("Priority (high/medium/low): " )
+task = input("Enter your task: ")
+priority = input("Priority (high/medium/low): " )
 time_bound = input("Is it time-bound? (yes/no): ")
 
 # Process the task using match-case
-match priority_variable:
+match priority:
     case "high":
-        message = f"🔥 High-priority task: {task_variable}"
+        message = f"🔥 High-priority task: {task}"
     case "medium":
-        message = f"⚠️ Medium-priority task: {task_variable}"
+        message = f"⚠️ Medium-priority task: {task}"
     case "low":
-        message = f"✅ Low-priority task: {task_variable}"
+        message = f"✅ Low-priority task: {task}"
     case _:
-        message = f"❓ Unknown priority for task: {task_variable}"
+        message = f"❓ Unknown priority for task: {task}"
 
 # Adjust the message if the task is time-sensitive
 if time_bound == "yes":
